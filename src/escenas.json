@@ -1,0 +1,22 @@
+{
+	"escenas": [
+		{
+			"id": 1,
+			"nombre": "Cafeteria",
+			"src": "Cafeteria",
+			"siguientes": [2]
+		},
+		{
+			"id": 2,
+			"nombre": "Cuarto de Juan",
+			"src": "cuarto",
+			"siguientes": [3]
+		},
+		{
+			"id": 3,
+			"nombre": "Entrada Universidad",
+			"src": "entrada.exe",
+			"siguientes": [4, 5]
+		}
+	]
+}

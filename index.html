@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap"
+			rel="stylesheet" />
+		<link rel="stylesheet" href="css/styles.css" />
+		<title>Inicio</title>
+	</head>
+	<body>
+		<header class="header">
+			<div>
+				<a class="titulo-header" href="/index.html">MultiNovel</a>
+			</div>
+			<nav>
+				<ul class="nav-links">
+					<li><a href="/index.html">Inicio</a></li>
+					<li><a href="/AcercaDe.html">Acerca de</a></li>
+				</ul>
+			</nav>
+			<div class="menu toggle-menu">
+				<img onclick="openNav()" src="/src/img/Menu hamburguesa.png" alt="" />
+			</div>
+			<div class="overlay" id="mobile-menu">
+				<a onclick="closeNav()" class="close" href="#">&times;</a>
+				<div class="overlay-content">
+					<a href="/index.html">Inicio</a>
+					<a href="/AcercaDe.html">Acerca de</a>
+				</div>
+			</div>
+		</header>
+		<div class="container">
+			<p>
+				MultiNovel es una novela visual para aquellos candidatos a cursar el programa de Ingeniería Multimedia
+				en la UAO. Presiona <span class="bold"> ESPACIO</span> o presione el botón de la parte inferior para
+				navegar por la historia.
+			</p>
+		</div>
+		<div class="contenedorCanvas">
+			<div class="canvas">
+				<img id="canvas" src="src/img/Escena 1.jpeg" alt="" />
+			</div>
+			<div class="contenedorBotones">
+				<button class="botonOpcion botonA" onclick="opcionBotonA()">Opción 1</button>
+				<button class="botonOpcion botonB" onclick="opcionBotonB()">Opción 2</button>
+			</div>
+		</div>
+		<div class="container">
+			<img
+				class="btnNext"
+				id="btnNext"
+				src="/src/img/next.png"
+				alt="Botón siguiente para avanzar en la historia." />
+		</div>
+		<script type="module" src="/js/main.js"></script>
+	</body>
+</html>
