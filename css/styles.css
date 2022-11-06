@@ -59,7 +59,7 @@
 
 .botonOpcion {
 	position: absolute;
-	width: 10%;
+	width: 14%;
 	height: 7%;
 	/* display: none; */
 	/* width: 23.2%;
@@ -209,10 +209,11 @@
 	}
 
 	.canvas img {
-		width: 80%;
+		width: 85%;
 	}
 
 	.btnNext {
 		margin-top: 2%;
+		width: 15%;
 	}
 }
