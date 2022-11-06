@@ -197,10 +197,22 @@
 		right: 35px;
 		font-size: 40px;
 	}
+
+	/* .canvas img {
+		width: 80%;
+	}*/
 }
 
 @media screen and (max-width: 648px) {
 	.card {
 		flex-direction: column-reverse;
+	}
+
+	.canvas img {
+		width: 80%;
+	}
+
+	.btnNext {
+		margin-top: 2%;
 	}
 }
