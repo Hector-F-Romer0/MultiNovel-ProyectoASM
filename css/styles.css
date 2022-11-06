@@ -11,7 +11,7 @@
 }
 
 .btnNext {
-	width: 10%;
+	width: 7%;
 	border-radius: 20px;
 	background-color: transparent;
 }
@@ -31,18 +31,24 @@
 	position: relative;
 	background-color: rgb(230, 255, 103);
 	width: 100%;
+	/* display: flex;
+	justify-content: center;
+	align-items: center; */
+}
+
+.canvas {
+	background-color: #e0e0e0;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
-.canvas {
-	background-color: rgb(20, 131, 116);
-}
-
 .canvas img {
-	width: 70%;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	width: 60%;
 	max-height: 100%;
+	border-radius: 10px;
 }
 
 .contenedorBotones {
@@ -53,7 +59,7 @@
 
 .botonOpcion {
 	position: absolute;
-	width: 25%;
+	width: 10%;
 	height: 7%;
 	/* display: none; */
 	/* width: 23.2%;
@@ -66,12 +72,12 @@
 
 .botonA {
 	top: 80%;
-	left: 20%;
+	left: 35%;
 }
 
 .botonB {
 	top: 80%;
-	left: 60%;
+	left: 55%;
 }
 
 /* * NavBar */
@@ -151,6 +157,7 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	background-color: rgba(247, 112, 89, 0.9);
 }
 
 .header .overlay a {
@@ -160,6 +167,7 @@
 	transition: all 0.3s ease 0s;
 	font-weight: 700;
 	color: #ffffff;
+	background-color: rgba(247, 112, 89, 0.9);
 }
 
 .header .overlay .close {
@@ -175,6 +183,7 @@
 
 .toggle-menu img {
 	max-width: 100%;
+	background-color: #0bcdf1;
 	filter: invert(1);
 }
 

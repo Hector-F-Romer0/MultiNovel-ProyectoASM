@@ -22,10 +22,10 @@
 				</ul>
 			</nav>
 			<div class="menu toggle-menu">
-				<img onclick="openNav()" src="/src/img/Menu hamburguesa.png" alt="" />
+				<img id="toggle-menu" src="/src/img/Menu hamburguesa.png" alt="" />
 			</div>
 			<div class="overlay" id="mobile-menu">
-				<a onclick="closeNav()" class="close" href="#">&times;</a>
+				<a class="close" id="close-toggle-menu" href="#">&times;</a>
 				<div class="overlay-content">
 					<a href="/index.html">Inicio</a>
 					<a href="/AcercaDe.html">Acerca de</a>
@@ -35,13 +35,13 @@
 		<div class="container">
 			<p>
 				MultiNovel es una novela visual para aquellos candidatos a cursar el programa de Ingeniería Multimedia
-				en la UAO. Presiona <span class="bold"> ESPACIO</span> o presione el botón de la parte inferior para
-				navegar por la historia.
+				en la UAO. Presiona la tecla <span class="bold"> ESPACIO</span> de tu teclado o presione el botón de la
+				parte inferior para navegar por la historia.
 			</p>
 		</div>
 		<div class="contenedorCanvas">
 			<div class="canvas">
-				<img id="canvas" src="src/img/Escena 1.jpeg" alt="" />
+				<img id="canvas" src="src/scenes/introduction/1-1.jpg" alt="" />
 			</div>
 			<div class="contenedorBotones">
 				<button class="botonOpcion botonA" onclick="opcionBotonA()">Opción 1</button>
