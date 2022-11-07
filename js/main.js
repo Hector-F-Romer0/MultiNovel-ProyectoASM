@@ -6,8 +6,6 @@ const canvas = document.getElementById("canvas");
 const btnNext = document.getElementById("btnNext");
 const btnA = document.getElementById("botonA");
 const btnB = document.getElementById("botonB");
-const toggleMenu = document.getElementById("toggle-menu");
-const closeToggleMenu = document.getElementById("close-toggle-menu");
 
 let rutaActual = "introduccion";
 let idEscenaActual = controlEscenas.introduccion[0].id;
@@ -68,8 +66,8 @@ const ocultarBotones = () => {
 	esDesicion = false;
 };
 
-btnA.addEventListener("click", () => opcionBoton("A", rutaActual));
-btnB.addEventListener("click", () => opcionBoton("B", rutaActual));
+btnA.addEventListener("click", () => opcionBoton("A", rutaActual, idEscenaActual, ocultarBotones));
+btnB.addEventListener("click", () => opcionBoton("B", rutaActual, idEscenaActual, ocultarBotones));
 
 btnNext.addEventListener("click", () => {
 	cambiarEscena();
@@ -84,7 +82,3 @@ document.addEventListener("keypress", function onEvent(event) {
 		cambiarEscena();
 	}
 });
-
-// Control del navbar responsive.
-toggleMenu.addEventListener("click", () => (document.getElementById("mobile-menu").style.width = "100%"));
-closeToggleMenu.addEventListener("click", () => (document.getElementById("mobile-menu").style.width = "0%"));
