@@ -59,25 +59,22 @@
 
 .botonOpcion {
 	position: absolute;
-	width: 14%;
-	height: 7%;
+	width: 24%;
+	height: 14%;
 	display: none;
-	/* width: 23.2%;
-	height: 100%; */
-	/* background-color: transparent; */
+	background-color: transparent;
 	box-shadow: none;
-	/* opacity: 0; */
-	/* border-radius: 35%; */
+	opacity: 0;
 }
 
 .botonA {
-	top: 80%;
-	left: 35%;
+	top: 36%;
+	left: 38%;
 }
 
 .botonB {
-	top: 80%;
-	left: 55%;
+	top: 55%;
+	left: 38%;
 }
 
 .titulo {
