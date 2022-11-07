@@ -151,6 +151,11 @@
 		},
 		{
 			"id": 5,
+			"src": "src/scenes/route2/3-5.jpg",
+			"idSiguiente": [6]
+		},
+		{
+			"id": 6,
 			"src": "src/scenes/route2/final2.jpg",
 			"idSiguiente": []
 		}
