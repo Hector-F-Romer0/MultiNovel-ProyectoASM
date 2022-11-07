@@ -53,81 +53,160 @@
 			"nombre": "Dialogo-Fabiana1",
 			"src": "src/scenes/introduction/1-9.jpg",
 			"idSiguiente": [10]
+		},
+		{
+			"id": 10,
+			"nombre": "Desicion1",
+			"src": "src/scenes/introduction/1-10.jpg",
+			"idSiguiente": []
 		}
 	],
 	"ruta1": [
 		{
 			"id": 1,
 			"nombre": "Porteria3",
-			"src": "src/scenes/rute1/2-1.jpg",
+			"src": "src/scenes/route1/2-1.jpg",
 			"idSiguiente": [2]
 		},
 		{
 			"id": 2,
 			"nombre": "Dialogo1-porteria3",
-			"src": "src/scenes/rute1/2-2.jpg",
+			"src": "src/scenes/route1/2-2.jpg",
 			"idSiguiente": [3]
 		},
 		{
 			"id": 3,
 			"nombre": "salon1",
-			"src": "src/scenes/introduction/2-3.jpg",
+			"src": "src/scenes/route1/2-3.jpg",
 			"idSiguiente": [4]
 		},
 		{
 			"id": 4,
 			"nombre": "salon1-dialogo1",
-			"src": "src/scenes/introduction/2-4.jpg",
+			"src": "src/scenes/route1/2-4.jpg",
 			"idSiguiente": [5]
 		},
 		{
 			"id": 5,
 			"nombre": "salon1-dialogo2",
-			"src": "src/scenes/introduction/2-5.jpg",
+			"src": "src/scenes/route1/2-5.jpg",
 			"idSiguiente": [6]
 		},
 		{
 			"id": 6,
 			"nombre": "salon1-dialogo3",
-			"src": "src/scenes/introduction/2-6.jpg",
+			"src": "src/scenes/route1/2-6.jpg",
 			"idSiguiente": [7]
 		},
 		{
 			"id": 7,
 			"nombre": "cafeteria",
-			"src": "src/scenes/introduction/2-7.jpg",
+			"src": "src/scenes/route1/2-7.jpg",
 			"idSiguiente": [8]
 		},
 		{
 			"id": 8,
 			"nombre": "cafeteria-dialogo1",
-			"src": "src/scenes/introduction/2-8.jpg",
+			"src": "src/scenes/route1/2-8.jpg",
 			"idSiguiente": [9]
 		},
 		{
 			"id": 9,
 			"nombre": "cafeteria-dialogo2",
-			"src": "src/scenes/introduction/2-9.jpg",
+			"src": "src/scenes/route1/2-9.jpg",
 			"idSiguiente": [10]
 		},
 		{
 			"id": 10,
 			"nombre": "cafeteria-dialogo3",
-			"src": "src/scenes/introduction/2-10.jpg",
+			"src": "src/scenes/route1/2-10.jpg",
 			"idSiguiente": [11]
 		},
 		{
 			"id": 11,
 			"nombre": "biblioteca",
-			"src": "src/scenes/introduction/2-11.jpg",
+			"src": "src/scenes/route1/2-11.jpg",
 			"idSiguiente": [12]
 		},
 		{
 			"id": 12,
 			"nombre": "biblioteca-dialogo1",
-			"src": "src/scenes/introduction/final1.jpg",
+			"src": "src/scenes/route1/final1.jpg",
 			"idSiguiente": [13]
 		}
 	],
-	"ruta2": []
+	"ruta2": [
+		{
+			"id": 1,
+			"nombre": "Porteria3",
+			"src": "src/scenes/route2/3-1.jpg",
+			"idSiguiente": [2]
+		},
+		{
+			"id": 2,
+			"nombre": "Dialogo1-porteria3",
+			"src": "src/scenes/route2/3-2.jpg",
+			"idSiguiente": [3]
+		},
+		{
+			"id": 3,
+			"nombre": "salon1",
+			"src": "src/scenes/route2/3-3.jpg",
+			"idSiguiente": [4]
+		},
+		{
+			"id": 4,
+			"nombre": "salon1-dialogo1",
+			"src": "src/scenes/route2/3-4.jpg",
+			"idSiguiente": [5]
+		},
+		{
+			"id": 5,
+			"nombre": "salon1-dialogo2",
+			"src": "src/scenes/route2/3-5.jpg",
+			"idSiguiente": [6]
+		},
+		{
+			"id": 6,
+			"nombre": "salon1-dialogo3",
+			"src": "src/scenes/route2/3-6.jpg",
+			"idSiguiente": [7]
+		},
+		{
+			"id": 7,
+			"nombre": "cafeteria",
+			"src": "src/scenes/route2/3-7.jpg",
+			"idSiguiente": [8]
+		},
+		{
+			"id": 8,
+			"nombre": "cafeteria-dialogo1",
+			"src": "src/scenes/route2/3-8.jpg",
+			"idSiguiente": [9]
+		},
+		{
+			"id": 9,
+			"nombre": "cafeteria-dialogo2",
+			"src": "src/scenes/route2/3-9.jpg",
+			"idSiguiente": [10]
+		},
+		{
+			"id": 10,
+			"nombre": "cafeteria-dialogo3",
+			"src": "src/scenes/route2/3-10.jpg",
+			"idSiguiente": [11]
+		},
+		{
+			"id": 11,
+			"nombre": "biblioteca",
+			"src": "src/scenes/route2/3-11.jpg",
+			"idSiguiente": [12]
+		},
+		{
+			"id": 12,
+			"nombre": "biblioteca-dialogo1",
+			"src": "src/scenes/route2/final2.jpg",
+			"idSiguiente": [13]
+		}
+	]
 }
