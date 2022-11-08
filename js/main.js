@@ -18,11 +18,10 @@ const cambiarEscena = () => {
 	// Si el usuario se encuentra en la escena de desición, no retornará nada al entrar a este método y saldrá inmediatamente
 	if (!esDesicion === false) return;
 
+	const rutaEscena = controlEscenas[rutaActual][idEscenaActual].src;
 	console.log(
 		` RUTA ${rutaActual} INICIO ---- idEscenaActual: ${idEscenaActual}, idSiguiente: ${idEscenaSiguiente},`
 	);
-
-	const rutaEscena = controlEscenas[rutaActual][idEscenaActual].src;
 	console.log(rutaEscena);
 	canvas.setAttribute("src", rutaEscena);
 
@@ -35,19 +34,27 @@ const cambiarEscena = () => {
 
 const opcionBoton = (botonEscogido) => {
 	if (botonEscogido === "A") {
+		console.log(`Escena actual: ${idEscenaActual}`);
 		// * Opciones botón A
 		if (rutaActual === "introduccion" && idEscenaActual === 10) rutaActual = "ruta1";
 		if (rutaActual === "ruta1" && idEscenaActual === 7) reset = false;
 		if (rutaActual === "ruta1" && idEscenaActual === 12) reset = false;
+		if (rutaActual === "ruta3" && idEscenaActual === 5) reset = false;
+		if (rutaActual === "ruta5" && idEscenaActual === 4) reset = false;
+		if (rutaActual === "ruta5" && idEscenaActual === 8) reset = false;
+		if (rutaActual === "ruta7" && idEscenaActual === 8) reset = false;
 		ocultarBotones();
-
+		console.log(`Reset: ${reset}`);
 		return;
 	}
 
 	// * Opciones botón B
-	if (rutaActual === "introduccion" && idEscenaActual === 10) rutaActual = "ruta1";
+	if (rutaActual === "introduccion" && idEscenaActual === 10) rutaActual = "ruta5";
 	if (rutaActual === "ruta1" && idEscenaActual === 7) rutaActual = "ruta3";
 	if (rutaActual === "ruta1" && idEscenaActual === 12) rutaActual = "ruta2";
+	if (rutaActual === "ruta3" && idEscenaActual === 5) rutaActual = "ruta4";
+	if (rutaActual === "ruta5" && idEscenaActual === 4) rutaActual = "ruta7";
+	if (rutaActual === "ruta7" && idEscenaActual === 8) rutaActual = "ruta8";
 	ocultarBotones();
 };
 

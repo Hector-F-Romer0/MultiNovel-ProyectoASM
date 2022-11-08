@@ -10,6 +10,10 @@
 	font-weight: 700;
 }
 
+.container p {
+	font-family: 14px;
+}
+
 .btnNext {
 	width: 7%;
 	border-radius: 20px;
@@ -62,9 +66,9 @@
 	width: 24%;
 	height: 14%;
 	display: none;
-	/* background-color: transparent; */
+	background-color: transparent;
 	box-shadow: none;
-	/* opacity: 0; */
+	opacity: 0;
 }
 
 .botonA {
