@@ -6,12 +6,12 @@ const canvas = document.getElementById("canvas");
 const btnNext = document.getElementById("btnNext");
 const btnA = document.getElementById("botonA");
 const btnB = document.getElementById("botonB");
+const audioButton = document.getElementById("audioButton");
 
 let reset = true;
 let rutaActual = "introduccion";
 let idEscenaActual = controlEscenas.introduccion[0].id;
 let idEscenaSiguiente = controlEscenas.introduccion[0].idSiguiente[0];
-
 let esDesicion = false;
 
 const cambiarEscena = () => {
@@ -33,6 +33,7 @@ const cambiarEscena = () => {
 };
 
 const opcionBoton = (botonEscogido) => {
+	audioButton.play();
 	if (botonEscogido === "A") {
 		console.log(`Escena actual: ${idEscenaActual}`);
 		// * Opciones botón A
@@ -43,6 +44,7 @@ const opcionBoton = (botonEscogido) => {
 		if (rutaActual === "ruta5" && idEscenaActual === 4) reset = false;
 		if (rutaActual === "ruta5" && idEscenaActual === 8) reset = false;
 		if (rutaActual === "ruta7" && idEscenaActual === 8) reset = false;
+
 		ocultarBotones();
 		console.log(`Reset: ${reset}`);
 		return;

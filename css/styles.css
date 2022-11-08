@@ -21,6 +21,10 @@
 	background-color: transparent;
 }
 
+.btnNext:active {
+	transform: scale(0.8);
+}
+
 .container {
 	/* background-color: rgb(18, 153, 52); */
 	display: flex;
@@ -70,6 +74,10 @@
 	background-color: transparent;
 	box-shadow: none;
 	opacity: 0;
+}
+
+.botonOpcion :active {
+	transform: scale(0.8);
 }
 
 .botonA {
