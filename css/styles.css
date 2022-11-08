@@ -8,10 +8,11 @@
 
 .bold {
 	font-weight: 700;
+	font-size: 1rem;
 }
 
-.container p {
-	font-family: 14px;
+.text {
+	font-size: 1rem;
 }
 
 .btnNext {
@@ -220,5 +221,13 @@
 	.btnNext {
 		margin-top: 2%;
 		width: 15%;
+	}
+
+	.bold {
+		font-size: 0.5rem;
+	}
+
+	.text {
+		font-size: 0.5rem;
 	}
 }
