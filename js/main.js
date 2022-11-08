@@ -15,16 +15,17 @@ let idEscenaSiguiente = controlEscenas.introduccion[0].idSiguiente[0];
 let esDesicion = false;
 
 const cambiarEscena = () => {
-	// Si el usuario se encuentra en la escena de desición, no retornará nada al entrar a este método y saldrá inmediatamente
+	// * Si el usuario se encuentra en la escena de desición, no retornará nada al entrar a este método y saldrá inmediatamente
 	if (!esDesicion === false) return;
 
-	const rutaEscena = controlEscenas[rutaActual][idEscenaActual].src;
-	console.log(
-		` RUTA ${rutaActual} INICIO ---- idEscenaActual: ${idEscenaActual}, idSiguiente: ${idEscenaSiguiente},`
-	);
-	console.log(rutaEscena);
-	canvas.setAttribute("src", rutaEscena);
+	if (idEscenaSiguiente === undefined) {
+		rutaActual = "introduccion";
+		resetRuta();
+		return;
+	}
 
+	const rutaEscena = controlEscenas[rutaActual][idEscenaActual].src;
+	canvas.setAttribute("src", rutaEscena);
 	// Guardamos el id de la escena siguiente
 	idEscenaSiguiente = controlEscenas[rutaActual][idEscenaActual].idSiguiente[0];
 	// Actualizamos la id de la escena actual con el valor de la escena siguiente GUARDADA anteriormente.r
@@ -35,8 +36,7 @@ const cambiarEscena = () => {
 const opcionBoton = (botonEscogido) => {
 	audioButton.play();
 	if (botonEscogido === "A") {
-		console.log(`Escena actual: ${idEscenaActual}`);
-		// * Opciones botón A
+		// * Opciones botón A. Si no se cambia de ruta, el valor de reset será false para seguir con la secuencia de imágenes
 		if (rutaActual === "introduccion" && idEscenaActual === 10) rutaActual = "ruta1";
 		if (rutaActual === "ruta1" && idEscenaActual === 7) reset = false;
 		if (rutaActual === "ruta1" && idEscenaActual === 12) reset = false;
@@ -46,7 +46,6 @@ const opcionBoton = (botonEscogido) => {
 		if (rutaActual === "ruta7" && idEscenaActual === 8) reset = false;
 
 		ocultarBotones();
-		console.log(`Reset: ${reset}`);
 		return;
 	}
 
@@ -70,9 +69,8 @@ const ocultarBotones = () => {
 	btnB.style.display = "none";
 
 	if (reset) {
-		canvas.setAttribute("src", controlEscenas[rutaActual][0].src);
-		idEscenaActual = controlEscenas[rutaActual][0].id;
-		idEscenaSiguiente = controlEscenas[rutaActual][0].idSiguiente[0];
+		// Resetea los índices de las escenas a 0 para arrancar una nueva ruta
+		resetRuta();
 	} else {
 		// cambiarEscena();
 		canvas.setAttribute("src", controlEscenas[rutaActual][idEscenaActual].src);
@@ -83,11 +81,13 @@ const ocultarBotones = () => {
 	}
 
 	reset = true;
-	console.log(
-		`CAMBIO DE RUTA ${rutaActual} ---- idEscenaActual: ${idEscenaActual}, idSiguiente: ${idEscenaSiguiente},`
-	);
-
 	esDesicion = false;
+};
+
+const resetRuta = () => {
+	canvas.setAttribute("src", controlEscenas[rutaActual][0].src);
+	idEscenaActual = controlEscenas[rutaActual][0].id;
+	idEscenaSiguiente = controlEscenas[rutaActual][0].idSiguiente[0];
 };
 
 btnA.addEventListener("click", () => opcionBoton("A", rutaActual, idEscenaActual, ocultarBotones));
@@ -97,12 +97,11 @@ btnNext.addEventListener("click", () => {
 	cambiarEscena();
 });
 
-// Evento que detecta cuando el usuario presiona la tecla 'Space'
+// * Evento que detecta cuando el usuario presiona la tecla 'Space'
 document.addEventListener("keypress", function onEvent(event) {
 	if (event.key === " ") {
 		// Previene que se haga scroll hacia abajo cuando el usuario presione la tecla 'Space.
 		event.preventDefault();
-		console.log("Precionaste la tecla 'Space'");
 		cambiarEscena();
 	}
 });
