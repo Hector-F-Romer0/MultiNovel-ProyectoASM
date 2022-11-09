@@ -23,7 +23,6 @@ const cambiarEscena = () => {
 		resetRuta();
 		return;
 	}
-
 	const rutaEscena = controlEscenas[rutaActual][idEscenaActual].src;
 	canvas.setAttribute("src", rutaEscena);
 	// Guardamos el id de la escena siguiente
@@ -55,6 +54,7 @@ const opcionBoton = (botonEscogido) => {
 	if (rutaActual === "ruta1" && idEscenaActual === 12) rutaActual = "ruta2";
 	if (rutaActual === "ruta3" && idEscenaActual === 5) rutaActual = "ruta4";
 	if (rutaActual === "ruta5" && idEscenaActual === 4) rutaActual = "ruta7";
+	if (rutaActual === "ruta5" && idEscenaActual === 8) rutaActual = "ruta6";
 	if (rutaActual === "ruta7" && idEscenaActual === 8) rutaActual = "ruta8";
 	ocultarBotones();
 };

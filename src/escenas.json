@@ -316,7 +316,23 @@
 			"idSiguiente": []
 		}
 	],
-	"ruta6": [],
+	"ruta6": [
+		{
+			"id": 1,
+			"src": "src/scenes/route6/7-1.jpg",
+			"idSiguiente": [2]
+		},
+		{
+			"id": 2,
+			"src": "src/scenes/route6/7-2.jpg",
+			"idSiguiente": [3]
+		},
+		{
+			"id": 3,
+			"src": "src/scenes/route6/final6.jpg",
+			"idSiguiente": []
+		}
+	],
 	"ruta7": [
 		{
 			"id": 1,
